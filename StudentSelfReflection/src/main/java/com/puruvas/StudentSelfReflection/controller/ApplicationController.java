@@ -22,12 +22,10 @@ public class ApplicationController {
     }
 
     @PostMapping("/create")
-
     public Application saveData(@RequestBody Application application)
     {
 
         Application savedApplication = applicationServices.createUser(application);
         return savedApplication;
-
     }
 }
